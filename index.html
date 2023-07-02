@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <title>country card</title>
+
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+            integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+            crossorigin="anonymous" />
+      <script src="https://kit.fontawesome.com/d2815d0aa2.js" crossorigin="anonymous"></script>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+      <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+      <header>
+            <h2>World Countries Data</h2>
+      </header>
+
+      <main>
+            <div class="cntrli text-center">
+                  <input class="search-input" id="searchBtn" type="text" placeholder="Search countries by name, city and languages" autofocus>
+                  <i class="fa-solid fa-magnifying-glass fa-1x"></i>
+            </div>
+
+            <div class="buttons">
+                  <button id="name" class="name" value="Name">
+                        Name <i class="fas fa-long-arrow-alt-down"></i>
+                  </button>
+                  <button id="capital" value="Capital" class="capital">
+                        Capital <i class="fas fa-long-arrow-alt-down"></i>
+                  </button>
+                  <button id="population" value="Population" class="population">
+                        Population <i class="fas fa-long-arrow-alt-down"></i>
+                  </button>
+                  <a href="javascript:;" class="info"><i class="fas fa-chart-bar"></i></a>
+            </div>        
+      </main>
+
+      <div class="container-fluid ">
+            <div class="row bg-color" id="card">
+
+                  <!-- <div class="col-sm-6 col-md-3">
+                        <div class="thumbnail cardimg">
+                              <figure>
+                              <img src="https://flagcdn.com/dz.svg" alt="img">
+                        </figure>
+                              <div class="caption ">
+                                    <h3>Algeria</h3>
+                                    <p> capital: <span>Algiers</span></p>
+                                    <p> languages: <span></span></p>
+                                    <p> population: <span></span></p>
+                              </div>
+                        </div>
+                  </div>                 -->
+            </div>
+      </div>
+
+      <div class=" graphbtn text-center" id="graphbtn">
+                  <button class="population">Population</button>
+                  <button class="languages">Langauges</button>
+      </div>
+
+      <div class="grid">
+                 <div class="grids">
+                  <div class="tables"> 
+                       <div>English</div> 
+                       <div class="engbar"></div>
+                        <div>91</div>
+                  </div>
+                  <div class="tables">
+                        <div>French</div>
+                        <div class="French"></div>
+                        <div>45</div>
+                  </div>
+                  <div class="tables">
+                        <div>Arabic</div>
+                        <div class="Arabic"></div>
+                        <div>25</div>
+                  </div>
+                  <div class="tables">
+                        <div>Spanish</div>
+                        <div class="Spanish"></div>
+                        <div>23</div>
+                  </div>
+                  <div class="tables">
+                        <div>Portuguese</div>
+                        <div class="portubar"></div>
+                        <div>15</div>
+                  </div>
+                  <div class="tables">
+                        <div>Russian</div>
+                        <div class="russianbar"></div>
+                        <div>10</div>
+                  </div>
+                  <div class="tables">
+                        <div>Dutch</div>
+                        <div class="dutchbar" ></div>
+                        <div>9</div>
+                  </div>
+                  <div class="tables">
+                        <div>German</div>
+                        <div class="gerbar"></div>
+                        <div>7</div>
+                  </div>
+                  <div class="tables">
+                        <div>Chinese</div>
+                        <div class="chinbar" ></div>
+                        <div>5</div>
+                  </div>
+                  <div class="tables">
+                        <div>Serbian</div>
+                        <div class="serbar" ></div>
+                        <div>3</div>
+                  </div>
+            </div>          
+      </div>
+      
+
+
+      <script src="./js/app.js"></script>
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+            crossorigin="anonymous"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+            integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
